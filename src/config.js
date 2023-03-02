@@ -7,7 +7,7 @@ const network = NETWORK.eth;
 // General metadata for Ethereum
 const namePrefix = "Your Collection";
 const description = "Remember to replace this description";
-const baseUri = "ipfs/bafybeiexerq7u6gsfcugx3voi4swpm4m2aezwgafjksu2mb7kut6xt46y4";
+const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
   symbol: "YC",
@@ -24,15 +24,17 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 10000,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Wing" },
+      { name: "Body" },
+      { name: "Armor" },
+      { name: "Weapon" },
+      { name: "Shoes" },
+      { name: "Neck" },
+      { name: "Earring" },
+      { name: "Eye" },
     ],
   },
 ];
@@ -42,8 +44,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 50,
+  height: 50,
   smoothing: false,
 };
 
