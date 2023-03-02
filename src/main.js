@@ -133,13 +133,13 @@ const addMetadata = (_dna, _edition) => {
   let tempMetadata = {
     name: `${namePrefix} #${_edition}`,
     description: description,
-    image: `${baseUri}/${_edition}.png`,
+    // image: `${baseUri}/${_edition}.png`, "hhcc"
     dna: sha1(_dna),
     edition: _edition,
-    date: dateTime,
+    // date: dateTime, "hhcc"
     ...extraMetadata,
     attributes: attributesList,
-    compiler: "HashLips Art Engine",
+    // compiler: "HashLips Art Engine",
   };
   if (network == NETWORK.sol) {
     tempMetadata = {
