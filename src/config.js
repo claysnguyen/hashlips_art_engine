@@ -27,7 +27,6 @@ const layerConfigurations = [
     growEditionSizeTo: 10,
     layersOrder: [
       { name: "Background" },
-      { name: "Wing" },
       { name: "Body" },
       { name: "Armor" },
       { name: "Shoes" },
